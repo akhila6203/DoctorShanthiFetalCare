@@ -17,6 +17,20 @@ function Youtube({ size = 18 }) {
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.4V8.6L15.6 12l-5.9 3.4Z"/></svg>;
 }
 
+function WhatsAppIcon({ size = 31 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M16.04 3C9.42 3 4.03 8.3 4.03 14.82c0 2.3.68 4.54 1.96 6.46L4 28.5l7.43-1.94a12.15 12.15 0 0 0 4.6.9h.01c6.62 0 12.01-5.3 12.01-11.82C28.05 9.1 22.66 3 16.04 3Zm0 22.46h-.01c-1.4 0-2.78-.37-3.98-1.07l-.29-.17-4.41 1.15 1.18-4.23-.19-.3a9.68 9.68 0 0 1-1.5-5.18c0-5.43 4.49-9.85 10.01-9.85 5.52 0 10.01 4.42 10.01 9.85 0 5.43-4.49 9.8-10.82 9.8Zm5.48-7.37c-.3-.15-1.78-.87-2.06-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.46-2.42-1.48-.89-.79-1.5-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.62-.93-2.22-.25-.58-.5-.5-.68-.51h-.58c-.2 0-.52.07-.8.37-.28.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.12 3.2 5.13 4.49.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.03-1.42.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35Z" />
+    </svg>
+  );
+}
+
 function FooterHeading({ title }) {
   return (
     <div>
@@ -37,6 +51,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
+     <>
     <footer className="bg-[linear-gradient(135deg,#48266D_0%,#663A8E_52%,#D94C8A_100%)] text-white">
       <div className="site-shell pt-10 sm:pt-12 lg:pt-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -79,7 +94,7 @@ export default function Footer() {
             <div className="mt-5 space-y-4">
               <div className="flex items-start gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#7FE0DD]"><Phone size={17} /></span>
-                <div><p className="text-[12px] font-bold uppercase tracking-[.1em] text-white/60">Appointment Phone</p><p className="mt-1 text-[15px] font-semibold sm:text-[16px]">+91 9999999999</p></div>
+                <div><p className="text-[12px] font-bold uppercase tracking-[.1em] text-white/60">Appointment Phone</p><p className="mt-1 text-[15px] font-semibold sm:text-[16px]">+91 91214 45341</p></div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#7FE0DD]"><Mail size={17} /></span>
@@ -109,5 +124,40 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/919121445341?text=Hello%20I%20would%20like%20to%20know%20more."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"  
+      title="Chat on WhatsApp"
+      className="
+        fixed
+        right-[26px]
+        bottom-[24px]
+        z-[9999]
+        flex
+        h-[58px]
+        w-[58px]
+        items-center
+        justify-center
+        rounded-full
+        bg-[#25D366]
+        text-white
+        shadow-[0_0_35px_14px_rgba(37,211,102,0.22)]
+        transition-all
+        duration-300
+        hover:scale-105
+        hover:bg-[#20c45a]
+        max-sm:right-[16px]
+        max-sm:bottom-[16px]
+        max-sm:h-[54px]
+        max-sm:w-[54px]
+      "
+    >
+      <WhatsAppIcon size={31} />
+    </a>
+  </>
+
   );
 }
