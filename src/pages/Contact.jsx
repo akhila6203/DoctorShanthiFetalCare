@@ -14,7 +14,7 @@ export default function Contact() {
               <h2 className="section-title mt-2">We are here to help you plan your consultation</h2>
               <p className="content-paragraph mt-5">For consultation enquiries, appointment requests or clinic information, use the contact details below or send a message through the form.</p>
               <div className="mt-7 space-y-4">
-                <div className="contact-row"><Phone size={21} /><div><span>Appointment Phone</span><p>+91-</p><small className="text-[13px] text-[#252A44]/55">Available for consultations</small></div></div>
+                <div className="contact-row"><Phone size={21} /><div><span>Appointment Phone</span><p>+91 91214 45341</p><small className="text-[13px] text-[#252A44]/55">Available for consultations</small></div></div>
                 <div className="contact-row"><Mail size={21} /><div><span>Email</span><a href="mailto:drshanthifetalcare@gmail.com">drshanthifetalcare@gmail.com</a></div></div>
                 <div className="contact-row"><MapPin size={21} /><div><span>Correspondence Address</span><p>Yashoda Hospital, Hitech City, Hyderabad</p></div></div>
               </div>
