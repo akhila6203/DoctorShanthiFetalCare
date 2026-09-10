@@ -189,16 +189,16 @@ export default function Header() {
           className="
             mx-auto
             flex
-            h-[78px]
+            h-[70px]
             w-full
             max-w-[1380px]
             items-center
             justify-between
             gap-5
             px-4
-            sm:h-[86px]
+            sm:h-[80px]
             sm:px-6
-            lg:h-[104px]
+            lg:h-[90px]
             lg:px-8
           "
         >
@@ -226,7 +226,7 @@ export default function Header() {
                 object-contain
                 sm:h-[62px]
                 sm:max-w-[215px]
-                lg:h-[76px]
+                lg:h-[79px]
                 lg:max-w-[260px]
               "
             />
@@ -256,11 +256,11 @@ export default function Header() {
                       group
                       relative
                       py-2
-                      text-[14px]
+                      text-[16px]
                       font-medium
                       transition-colors
                       duration-300
-                      xl:text-[15px]
+                      xl:text-[16px]
 
                       ${
                         isActive

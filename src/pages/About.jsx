@@ -1,6 +1,6 @@
 import { CheckCircle2, GraduationCap, HeartHandshake, ScanHeart, Stethoscope } from "lucide-react";
 import PageBanner from "../components/common/PageBanner";
-import doctorImage from "../assets/images/doctor.jpg";
+import doctorImage from "../assets/images/doctor.jpeg";
 
 const qualifications = [
   "MBBS from prestigious Gandhi Medical College, Hyderabad (Completed 2013)",

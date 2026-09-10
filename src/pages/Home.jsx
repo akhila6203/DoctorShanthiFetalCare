@@ -15,11 +15,11 @@ import {
 } from "lucide-react";
 import Reveal from "../components/home/Reveal";
 import TestimonialsSlider from "../components/home/TestimonialsSlider";
-import doctorImage from "../assets/images/doctor.jpg";
+import doctorImage from "../assets/images/doctor.jpeg";
 
-import amnioImage from "../assets/images/amniocentesis.jpg";
-import cvsImage from "../assets/images/cvs.jpg";
-import reductionImage from "../assets/images/fetal-reduction.jpg";
+import amnioImage from "../assets/images/amniocentesis.png";
+import cvsImage from "../assets/images/cvs.jpeg";
+import reductionImage from "../assets/images/fetal-reduction.jpeg";
 
 const services = [
   {

@@ -8,9 +8,9 @@ import PageBanner from "../components/common/PageBanner";
 import TestimonialsSlider from "../components/home/TestimonialsSlider";
 
 /* REAL CLINICAL IMAGES */
-import scanImage from "../assets/images/ultrasound-real.jpg";
-import motherBabyImage from "../assets/images/mother-baby.jpg";
-import consultationImage from "../assets/images/pregnancy-consultation.jpg";
+import scanImage from "../assets/images/amniocentesis.png";
+import motherBabyImage from "../assets/images/cvs.jpeg";
+import consultationImage from "../assets/images/pregnancy-consultation.jpeg";
 
 
 const testimonials = [

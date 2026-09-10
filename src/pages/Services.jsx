@@ -11,9 +11,9 @@ import {
 import PageBanner from "../components/common/PageBanner";
 
 // SAME REAL IMAGES USED IN HOME PAGE
-import amnioImage from "../assets/images/amniocentesis.jpg";
-import cvsImage from "../assets/images/cvs.jpg";
-import reductionImage from "../assets/images/fetal-reduction.jpg";
+import amnioImage from "../assets/images/amniocentesis.png";
+import cvsImage from "../assets/images/cvs.jpeg";
+import reductionImage from "../assets/images/amniocentesis.jpeg";
 
 
 /* =========================================================
