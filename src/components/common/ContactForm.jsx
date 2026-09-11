@@ -47,7 +47,7 @@ export default function ContactForm({ appointment = false }) {
           <span>Email Address *</span>
           <input type="email" name="email" value={form.email} onChange={onChange} required placeholder="Enter email address" />
         </label>
-        <label className="form-field">
+        {/* <label className="form-field">
           <span>{appointment ? "Preferred Date / Time" : "Subject"}</span>
           <input
             name="subject"
@@ -55,7 +55,22 @@ export default function ContactForm({ appointment = false }) {
             onChange={onChange}
             placeholder={appointment ? "Example: 12 Sep, morning" : "How can we help?"}
           />
-        </label>
+        </label> */}
+        <label className="form-field">
+  <span>{appointment ? "Subject / Reason *" : "Subject"}</span>
+
+  <input
+    name="subject"
+    value={form.subject}
+    onChange={onChange}
+    required={appointment}
+    placeholder={
+      appointment
+        ? "Enter subject / reason"
+        : "How can we help?"
+    }
+  />
+</label>
       </div>
       <label className="form-field mt-4">
         <span>{appointment ? "Reason for Appointment" : "Message"} *</span>

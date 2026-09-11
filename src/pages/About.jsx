@@ -22,9 +22,22 @@ export default function About() {
       <PageBanner title="About Me" subtitle="Know more about Dr. Shanthi.G, her training, clinical interests and approach to maternal and fetal care." />
       <section className="section-space bg-white">
         <div className="content-shell grid items-center gap-10 lg:grid-cols-[.78fr_1.22fr] lg:gap-14">
-          <div className="relative mx-auto w-full max-w-[390px] sm:max-w-[410px] lg:max-w-[400px]">
+          {/* <div className="relative mx-auto w-full max-w-[390px] sm:max-w-[410px] lg:max-w-[400px]"> */}
+          <div className="relative mx-auto w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[500px]">
             <div className="overflow-hidden rounded-[26px] bg-[#F9F3F7] shadow-[0_18px_48px_rgba(72,38,109,.09)]">
-              <img src={doctorImage} alt="Dr. Shanthi.G" className="w-full object-cover object-top" />
+              <img
+  src={doctorImage}
+  alt="Dr. Shanthi.G"
+  className="
+    h-[500px]
+    w-full
+    object-cover
+    object-top
+    sm:h-[560px]
+    lg:h-[650px]
+  "
+/>
+              {/* <img src={doctorImage} alt="Dr. Shanthi.G" className="w-full object-cover object-top" /> */}
             </div>
             <div className="absolute left-5 top-5 rounded-full bg-white/95 px-4 py-2 shadow-lg backdrop-blur">
               <p className="text-[12px] font-bold uppercase tracking-[.15em] text-[#D94C8A]">Dr. Shanthi.G</p>
@@ -43,13 +56,71 @@ export default function About() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#663A8E] text-white"><GraduationCap size={24} /></span>
                 <h3 className="text-[20px] font-bold text-[#252A44]">Education & Fellowships</h3>
               </div>
-              <div className="space-y-3.5">
+              {/* <div className="space-y-3.5">
                 {qualifications.map((item) => (
                   <div key={item} className="flex items-start gap-3 text-[15px] leading-7 text-[#252A44]/72 sm:text-[16px]">
                     <CheckCircle2 size={18} className="mt-1.5 shrink-0 text-[#24979D]" /> {item}
                   </div>
                 ))}
-              </div>
+              </div> */}
+              <div className="space-y-3">
+  {qualifications.map((item) => (
+    <div
+      key={item}
+      className="
+        group
+        flex
+        items-start
+        gap-3.5
+        rounded-[14px]
+        border
+        border-[#663A8E]/10
+        bg-white
+        px-4
+        py-3
+        text-[15px]
+        font-medium
+        leading-7
+        text-[#3F4057]
+        shadow-[0_4px_14px_rgba(72,38,109,.05)]
+        transition-all
+        duration-300
+        hover:-translate-y-[1px]
+        hover:border-[#663A8E]/20
+        hover:bg-[#F8F3FB]
+        hover:shadow-[0_8px_20px_rgba(72,38,109,.10)]
+        sm:px-4
+        sm:py-3.5
+        sm:text-[16px]
+      "
+    >
+      <span
+        className="
+          mt-1
+          flex
+          h-6
+          w-6
+          shrink-0
+          items-center
+          justify-center
+          rounded-full
+          bg-[#E9F8F8]
+          text-[#24979D]
+          transition-all
+          duration-300
+          group-hover:bg-[#663A8E]
+          group-hover:text-white
+        "
+      >
+        <CheckCircle2 size={15} strokeWidth={2.2} />
+      </span>
+
+      <span className="flex-1">
+        {item}
+      </span>
+    </div>
+  ))}
+</div>
             </div>
           </div>
         </div>

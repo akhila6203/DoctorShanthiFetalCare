@@ -16,6 +16,7 @@ import {
 import Reveal from "../components/home/Reveal";
 import TestimonialsSlider from "../components/home/TestimonialsSlider";
 import doctorImage from "../assets/images/doctor.jpeg";
+import doctor1 from "../assets/images/doctor1.png";
 
 import amnioImage from "../assets/images/amniocentesis.png";
 import cvsImage from "../assets/images/cvs.jpeg";
@@ -170,7 +171,7 @@ export default function Home() {
           <div className="hero-rise hero-delay-2 relative hidden h-full items-end justify-center self-stretch pt-5 lg:flex">
             <div className="relative flex h-full w-full items-end justify-center">
               <img
-                src={doctorImage}
+                src={doctor1}
                 alt="Dr. Shanthi.G"
                 className="hero-doctor-image w-full max-w-[560px] object-contain object-bottom"
               />

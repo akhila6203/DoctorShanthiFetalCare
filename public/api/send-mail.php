@@ -30,9 +30,27 @@ $subjectField = clean_value($data['subject'] ?? '');
 $message = clean_value($data['message'] ?? '');
 $formType = clean_value($data['form_type'] ?? 'Website Enquiry');
 
-if ($name === '' || $phone === '' || $message === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+// if ($name === '' || $phone === '' || $message === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//     http_response_code(422);
+//     echo json_encode(['success' => false, 'message' => 'Please complete all required fields with a valid email address.']);
+//     exit;
+// }
+$isAppointment = $formType === 'Appointment Request';
+
+if (
+    $name === '' ||
+    $phone === '' ||
+    $message === '' ||
+    ($isAppointment && $subjectField === '') ||
+    !filter_var($email, FILTER_VALIDATE_EMAIL)
+) {
     http_response_code(422);
-    echo json_encode(['success' => false, 'message' => 'Please complete all required fields with a valid email address.']);
+
+    echo json_encode([
+        'success' => false,
+        'message' => 'Please complete all required fields with a valid email address.'
+    ]);
+
     exit;
 }
 
@@ -43,7 +61,8 @@ $body .= "Form: {$formType}\n";
 $body .= "Name: {$name}\n";
 $body .= "Email: {$email}\n";
 $body .= "Phone: {$phone}\n";
-$body .= "Subject / Preferred Time: {$subjectField}\n\n";
+// $body .= "Subject / Preferred Time: {$subjectField}\n\n";
+$body .= "Subject / Reason: {$subjectField}\n\n";
 $body .= "Message:\n{$message}\n";
 
 $host = $_SERVER['HTTP_HOST'] ?? 'drshanthifetalcare.com';
