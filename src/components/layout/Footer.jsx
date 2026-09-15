@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { doctor } from "../../data/doctorData";
 import { footerQuickLinks, footerServiceLinks } from "../../data/navigation";
-import logo from "../../assets/logo/logo.jpg";
+import logo from "../../assets/logo/logo2.png";
 
 function Facebook({ size = 18 }) {
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.5Z"/></svg>;
@@ -56,9 +56,20 @@ export default function Footer() {
       <div className="site-shell pt-10 sm:pt-12 lg:pt-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
-            <Link to="/" className="inline-flex rounded-xl bg-white p-2.5" aria-label="Dr. Shanthi Fetal Care Home">
+            {/* <Link to="/" className="inline-flex rounded-xl bg-white p-2.5" aria-label="Dr. Shanthi Fetal Care Home ">
               <img src={logo} alt="Dr. Shanthi Fetal Care" className="h-[62px] w-auto max-w-[215px] object-contain" />
-            </Link>
+            </Link> */}
+            <Link
+  to="/"
+  className="inline-flex"
+  aria-label="Dr. Shanthi Fetal Care Home"
+>
+  <img
+    src={logo}
+    alt="Dr. Shanthi Fetal Care"
+    className="h-[110px] w-auto max-w-[340px] object-contain"
+  />
+</Link>
             <p className="mt-4 max-w-[350px] text-[15px] leading-7 text-white/82 sm:text-[16px]">
               {doctor.footerDescription || "Compassionate, advanced and evidence-based fetal, maternal and prenatal care for every mother and baby."}
             </p>
@@ -116,7 +127,7 @@ export default function Footer() {
           <a href="mailto:drshanthifetalcare@gmail.com" className="flex min-h-[82px] items-center gap-3 border-b border-white/18 px-5 py-3 transition hover:bg-white/[.05] md:border-b-0 md:border-r">
             <Mail size={21} className="shrink-0" /><span className="break-all text-[15px] font-semibold sm:text-[16px]">drshanthifetalcare@gmail.com</span>
           </a>
-          <div className="flex min-h-[82px] items-center gap-3 px-5 py-3"><MapPin size={21} className="shrink-0" /><span className="text-[15px] font-semibold leading-6 sm:text-[16px]">Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad </span></div>
+          <div className="flex min-h-[82px] items-center gap-3 px-5 py-3"><MapPin size={21} className="shrink-0" /><span className="text-[15px] font-semibold leading-6 sm:text-[16px]">Sunrise hospital, Moti nagar, Hyderabad</span></div>
         </div>
 
         <div className="mt-5 border-t border-white/12 py-4">
