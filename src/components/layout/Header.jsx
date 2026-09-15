@@ -164,7 +164,7 @@ export default function Header() {
               />
 
               <span>
-                Yashoda Hospital, Hitech City, Hyderabad
+                Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad
               </span>
             </div>
           </div>

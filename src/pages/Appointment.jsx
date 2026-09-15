@@ -15,7 +15,21 @@ export default function Appointment() {
             <div className="mt-7 space-y-4">
               <div className="contact-row"><CalendarDays size={21} /><div><span>Availability</span><p>Available for consultations</p></div></div>
               <div className="contact-row"><Mail size={21} /><div><span>Email</span><a href="mailto:drshanthifetalcare@gmail.com">drshanthifetalcare@gmail.com</a></div></div>
-              <div className="contact-row"><MapPin size={21} /><div><span>Clinical Location</span><p>Yashoda Hospital, Hitech City, Hyderabad</p></div></div>
+              {/* <div className="contact-row"><MapPin size={21} /><div><span>Clinical Location</span><p>Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad
+Address: K/21, 8-3-167, Kalyan Nagar Phase 3 Rd, phase-3, Pramila Enclave, Kalyan Nagar, Moti Nagar, Hyderabad, Telangana 500114</p></div></div> */}
+            <div className="contact-row">
+  <MapPin size={21} />
+  <div>
+    <span>Clinical Location</span>
+    <p>
+      Sunridge Multi-Speciality Hospital
+      <br />
+      K/21, 8-3-167, Kalyan Nagar Phase 3 Rd, Phase 3,
+      Pramila Enclave, Kalyan Nagar, Moti Nagar,
+      Hyderabad, Telangana 500114
+    </p>
+  </div>
+</div>
             </div>
           </div>
           <ContactForm appointment />

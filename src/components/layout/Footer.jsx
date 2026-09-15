@@ -102,7 +102,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-[#7FE0DD]"><MapPin size={17} /></span>
-                <div><p className="text-[12px] font-bold uppercase tracking-[.1em] text-white/60">Clinical Location</p><p className="mt-1 text-[15px] font-semibold leading-7 sm:text-[16px]">Yashoda Hospital, Hitech City, Hyderabad</p></div>
+                <div><p className="text-[12px] font-bold uppercase tracking-[.1em] text-white/60">Clinical Location</p><p className="mt-1 text-[15px] font-semibold leading-7 sm:text-[16px]"> K/21, 8-3-167, Kalyan Nagar Phase 3 Rd, phase-3, Pramila Enclave, Kalyan Nagar, Moti Nagar, Hyderabad, Telangana 500114.</p></div>
               </div>
             </div>
           </div>
