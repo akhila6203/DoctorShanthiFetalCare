@@ -90,7 +90,7 @@ const qualifications = [
   "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai (Completed 2020)",
   "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi (2021)",
   "Fellowship in Regenerative Medicine & Cosmetic Gynecology – IASRM, Delhi",
-  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Yashoda Hospital, Hitech City",
+  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunrise hospital, Moti nagar, Hyderabad",
 ];
 
 const expertise = [
@@ -366,7 +366,7 @@ export default function Home() {
             <div>
               <p className="section-eyebrow">Appointments</p>
               <h2 className="mt-2 text-2xl font-bold tracking-[-.03em] text-[#252A44] sm:text-3xl">Expert fetal & maternal care for your little one</h2>
-              <p className="mt-3 text-[15px] leading-7 text-[#252A44]/65 sm:text-[16px]">Available for consultations at Yashoda Hospital, Hitech City, Hyderabad.</p>
+              <p className="mt-3 text-[15px] leading-7 text-[#252A44]/65 sm:text-[16px]">Available for consultations at Sunrise hospital, Moti nagar, Hyderabad.</p>
             </div>
             <Link to="/appointment" className="premium-button"><CalendarDays size={17} /> Book an Appointment</Link>
           </div>

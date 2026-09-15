@@ -572,12 +572,11 @@ export default function Header() {
                 />
 
                 <span>
-                  Yashoda Hospital, Hitech City,
-                  Hyderabad
+                  Sunrise hospital, Moti nagar, Hyderabad
                 </span>
               </div>
             </div>
-
+ Yashoda Hospital
             <NavLink
               to="/appointment"
               onClick={closeMenu}
