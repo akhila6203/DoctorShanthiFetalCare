@@ -572,11 +572,11 @@ export default function Header() {
                 />
 
                 <span>
-                  Sunrise hospital, Moti nagar, Hyderabad
+                   Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad
                 </span>
               </div>
             </div>
- Yashoda Hospital
+
             <NavLink
               to="/appointment"
               onClick={closeMenu}

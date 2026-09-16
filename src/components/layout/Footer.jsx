@@ -127,7 +127,7 @@ export default function Footer() {
           <a href="mailto:drshanthifetalcare@gmail.com" className="flex min-h-[82px] items-center gap-3 border-b border-white/18 px-5 py-3 transition hover:bg-white/[.05] md:border-b-0 md:border-r">
             <Mail size={21} className="shrink-0" /><span className="break-all text-[15px] font-semibold sm:text-[16px]">drshanthifetalcare@gmail.com</span>
           </a>
-          <div className="flex min-h-[82px] items-center gap-3 px-5 py-3"><MapPin size={21} className="shrink-0" /><span className="text-[15px] font-semibold leading-6 sm:text-[16px]">Sunrise hospital, Moti nagar, Hyderabad</span></div>
+          <div className="flex min-h-[82px] items-center gap-3 px-5 py-3"><MapPin size={21} className="shrink-0" /><span className="text-[15px] font-semibold leading-6 sm:text-[16px]">Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad</span></div>
         </div>
 
         <div className="mt-5 border-t border-white/12 py-4">

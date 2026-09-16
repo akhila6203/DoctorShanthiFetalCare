@@ -27,10 +27,10 @@ export const doctor = {
     "MBBS – Gandhi Medical College, Hyderabad",
     "DNB Obstetrics & Gynecology – Southern Railway Hospital, Chennai",
     "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital, Delhi",
-    "Fellowship in Fetal Medicine – Sunrise hospital, Moti nagar, Hyderabad",
+    "Fellowship in Fetal Medicine – Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
   ],
   footerDescription:
-    "Compassionate, advanced and evidence-based fetal, maternal and women's healthcare at Sunrise hospital, Moti nagar, Hyderabad.",
+    "Compassionate, advanced and evidence-based fetal, maternal and women's healthcare at Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad.",
   ctaHeading: "Expert Care for You and Your Little One",
   ctaText:
     "Schedule a consultation with Dr. Shanthi for compassionate fetal, maternal and women's healthcare.",

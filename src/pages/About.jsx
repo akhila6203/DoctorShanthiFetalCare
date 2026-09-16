@@ -7,7 +7,7 @@ const qualifications = [
   "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai (Completed 2020)",
   "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi (2021)",
   "Fellowship in Regenerative Medicine & Cosmetic Gynecology – IASRM, Delhi",
-  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunrise hospital, Moti nagar, Hyderabad",
+  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
 ];
 
 const moments = [
