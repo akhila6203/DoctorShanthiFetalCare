@@ -213,9 +213,39 @@ export default function Home() {
           <Reveal delay={90}>
             <p className="section-eyebrow">About Dr. Shanthi.G</p>
             <h2 className="section-title mt-2">Advanced maternal and prenatal care with compassionate guidance</h2>
-            <p className="content-paragraph mt-5">
+            <div
+  className="
+    relative mt-6 overflow-hidden rounded-[22px]
+    border border-[#D94C8A]/15
+    bg-[linear-gradient(135deg,#FFF7FB_0%,#FBF8FD_55%,#F4FBFB_100%)]
+    px-5 py-5
+    shadow-[0_14px_35px_rgba(102,58,142,0.08)]
+    sm:px-6 sm:py-6
+  "
+>
+  <span
+    className="
+      absolute left-0 top-0 h-full w-[4px]
+      bg-[linear-gradient(180deg,#663A8E,#D94C8A)]
+    "
+  />
+
+  <p className="text-[16px] font-medium leading-8 text-[#252A44]/80 sm:text-[17px]">
+    <strong className="font-bold text-[#663A8E]">
+      Dr. Shanthi.G
+    </strong>{" "}
+    is a highly skilled Specialist in{" "}
+    <span className="font-semibold text-[#D94C8A]">
+      Fetal Medicine, Obstetrics & Gynecology
+    </span>
+    , Minimal Access Surgery, and Cosmetic Gynecology. She is
+    dedicated to providing compassionate, advanced and
+    evidence-based maternal and prenatal genetic care.
+  </p>
+</div>
+            {/* <p className="content-paragraph mt-5">
               Dr. Shanthi is a highly skilled Specialist in Fetal Medicine, Obstetrics, Gynecology, Minimal Access Surgery, and Cosmetic Gynecology. Dedicated to providing compassionate, advanced evidence-based maternal and prenatal genetic care.
-            </p>
+            </p> */}
             <div className="mt-6 space-y-3">
               {qualifications.map((item) => (
                 <div key={item} className="flex items-start gap-3 text-[15px] leading-7 text-[#252A44]/72 sm:text-[16px]">

@@ -11,6 +11,10 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Appointment from "./pages/Appointment";
 
+import FetalServices from "./pages/FetalServices";
+import FetalScans from "./pages/FetalScans";
+import FetalProcedures from "./pages/FetalProcedures";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -23,6 +27,22 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+
+          <Route
+  path="/services/fetal-services"
+  element={<FetalServices />}
+/>
+
+<Route
+  path="/services/fetal-scans"
+  element={<FetalScans />}
+/>
+
+<Route
+  path="/services/fetal-procedures"
+  element={<FetalProcedures />}
+/>
+
           <Route
             path="/testimonials"
             element={<Testimonials />}
