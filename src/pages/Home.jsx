@@ -25,7 +25,7 @@ import doctorImage from "../assets/images/doctor.jpeg";
 import doctor1 from "../assets/images/doctor1.png";
 import f2 from "../assets/images/fetal-reduction.jpeg";
 // import f1 from "../assets/images/f1.jpg";
-import Hero from "../assets/images/Hero.jpeg";
+import Hero from "../assets/images/hero.jpeg";
 
 import amnioImage from "../assets/images/amniocentesis.png";
 import cvsImage from "../assets/images/cvs.jpeg";
