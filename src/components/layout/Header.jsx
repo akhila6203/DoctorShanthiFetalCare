@@ -23,15 +23,17 @@ import logo from "../../assets/logo/logo.jpg";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
+// const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
 
-  // const closeMenu = () => {
-  //   setMenuOpen(false);
-  // };
-  const closeMenu = () => {
+ 
+//   const closeMenu = () => {
+//   setMenuOpen(false);
+//   setMobileServicesOpen(false);
+//   setMobileFetalOpen(false);
+// };
+const closeMenu = () => {
   setMenuOpen(false);
   setMobileServicesOpen(false);
-  setMobileFetalOpen(false);
 };
 
   return (
@@ -260,191 +262,159 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
       SERVICES DROPDOWN
   ================================================== */
   if (item.label === "Services") {
-    return (
-      <div
-        key={item.path}
-        className="group/services relative"
+  return (
+    <div
+      key={item.path}
+      className="group/services relative"
+    >
+      {/* MAIN SERVICES LINK */}
+      <NavLink
+        to="/services/advanced-fetal-scans"
+        className={({ isActive }) =>
+          `
+            relative
+            flex
+            items-center
+            gap-1.5
+            py-2
+            text-[16px]
+            font-medium
+            transition-colors
+            duration-300
+
+            ${
+              isActive
+                ? "text-[#D94C8A]"
+                : "text-[#252A44] hover:text-[#D94C8A]"
+            }
+          `
+        }
       >
-        {/* SERVICES MAIN LINK */}
-        <NavLink
-          to="/services"
-          className={({ isActive }) =>
-            `
-              relative
-              flex
-              items-center
-              gap-1.5
-              py-2
-              text-[16px]
-              font-medium
-              transition-colors
-              duration-300
+        <span>Services</span>
 
-              ${
-                isActive
-                  ? "text-[#D94C8A]"
-                  : "text-[#252A44] hover:text-[#D94C8A]"
-              }
-            `
-          }
-        >
-          <span>Services</span>
+        <ChevronDown
+          size={15}
+          strokeWidth={2}
+          className="
+            transition-transform
+            duration-300
+            group-hover/services:rotate-180
+          "
+        />
+      </NavLink>
 
-          <ChevronDown
-            size={15}
-            strokeWidth={2}
-            className="
-              transition-transform
-              duration-300
-              group-hover/services:rotate-180
-            "
-          />
-        </NavLink>
+      {/* DROPDOWN */}
+      <div
+        className="
+          invisible
+          absolute
+          left-1/2
+          top-full
+          z-[100]
+          w-[310px]
+          -translate-x-1/2
+          translate-y-2
+          pt-3
+          opacity-0
+          transition-all
+          duration-200
 
-        {/* ===========================================
-            FIRST DROPDOWN
-            Services -> Fetal Services
-        ============================================ */}
+          group-hover/services:visible
+          group-hover/services:translate-y-0
+          group-hover/services:opacity-100
+        "
+      >
         <div
           className="
-            invisible
-            absolute
-            left-1/2
-            top-full
-            z-[100]
-            w-[230px]
-            -translate-x-1/2
-            translate-y-2
-            pt-3
-            opacity-0
-            transition-all
-            duration-200
-
-            group-hover/services:visible
-            group-hover/services:translate-y-0
-            group-hover/services:opacity-100
+            rounded-[16px]
+            border
+            border-[#663A8E]/10
+            bg-white
+            p-2
+            shadow-[0_18px_45px_rgba(37,42,68,0.14)]
           "
         >
-          <div
-            className="
-              rounded-[16px]
-              border
-              border-[#663A8E]/10
-              bg-white
-              p-2
-              shadow-[0_18px_45px_rgba(37,42,68,0.14)]
-            "
+          {/* 1 */}
+          <NavLink
+            to="/services/advanced-fetal-scans"
+            className={({ isActive }) =>
+              `
+                block
+                rounded-xl
+                px-4
+                py-3
+                text-[14px]
+                font-medium
+                transition-all
+                duration-200
+
+                ${
+                  isActive
+                    ? "bg-[#FFF3F8] text-[#D94C8A]"
+                    : "text-[#252A44]/80 hover:bg-[#FFF3F8] hover:text-[#D94C8A]"
+                }
+              `
+            }
           >
-            {/* FETAL SERVICES */}
-            <div className="group/fetal relative">
-              <NavLink
-                to="/services/fetal-services"
-                className="
-                  flex
-                  items-center
-                  justify-between
-                  rounded-xl
-                  px-4
-                  py-3
-                  text-[14px]
-                  font-semibold
-                  text-[#252A44]
-                  transition-all
-                  duration-200
-                  hover:bg-[#FFF3F8]
-                  hover:text-[#D94C8A]
-                "
-              >
-                <span>Fetal Services</span>
+            Advanced Fetal Scans
+          </NavLink>
 
-                <ChevronRight
-                  size={16}
-                  strokeWidth={2}
-                />
-              </NavLink>
+          {/* 2 */}
+          <NavLink
+            to="/services/screening-diagnostics"
+            className={({ isActive }) =>
+              `
+                mt-1
+                block
+                rounded-xl
+                px-4
+                py-3
+                text-[14px]
+                font-medium
+                transition-all
+                duration-200
 
-              {/* =====================================
-                  SECOND DROPDOWN
-                  Fetal Services ->
-                  Fetal Scans
-                  Fetal Procedures
-              ====================================== */}
-              <div
-                className="
-                  invisible
-                  absolute
-                  left-full
-                  top-0
-                  z-[110]
-                  w-[220px]
-                  translate-x-2
-                  pl-3
-                  opacity-0
-                  transition-all
-                  duration-200
+                ${
+                  isActive
+                    ? "bg-[#FFF3F8] text-[#D94C8A]"
+                    : "text-[#252A44]/80 hover:bg-[#FFF3F8] hover:text-[#D94C8A]"
+                }
+              `
+            }
+          >
+            Screening & Diagnostics
+          </NavLink>
 
-                  group-hover/fetal:visible
-                  group-hover/fetal:translate-x-0
-                  group-hover/fetal:opacity-100
-                "
-              >
-                <div
-                  className="
-                    rounded-[16px]
-                    border
-                    border-[#663A8E]/10
-                    bg-white
-                    p-2
-                    shadow-[0_18px_45px_rgba(37,42,68,0.14)]
-                  "
-                >
-                  <NavLink
-                    to="/services/fetal-scans"
-                    className="
-                      block
-                      rounded-xl
-                      px-4
-                      py-3
-                      text-[14px]
-                      font-medium
-                      text-[#252A44]/80
-                      transition-all
-                      duration-200
-                      hover:bg-[#FFF3F8]
-                      hover:text-[#D94C8A]
-                    "
-                  >
-                    Fetal Scans
-                  </NavLink>
+          {/* 3 */}
+          <NavLink
+            to="/services/specialized-care-procedures"
+            className={({ isActive }) =>
+              `
+                mt-1
+                block
+                rounded-xl
+                px-4
+                py-3
+                text-[14px]
+                font-medium
+                transition-all
+                duration-200
 
-                  <NavLink
-                    to="/services/fetal-procedures"
-                    className="
-                      mt-1
-                      block
-                      rounded-xl
-                      px-4
-                      py-3
-                      text-[14px]
-                      font-medium
-                      text-[#252A44]/80
-                      transition-all
-                      duration-200
-                      hover:bg-[#FFF3F8]
-                      hover:text-[#D94C8A]
-                    "
-                  >
-                    Fetal Procedures
-                  </NavLink>
-                </div>
-              </div>
-            </div>
-          </div>
+                ${
+                  isActive
+                    ? "bg-[#FFF3F8] text-[#D94C8A]"
+                    : "text-[#252A44]/80 hover:bg-[#FFF3F8] hover:text-[#D94C8A]"
+                }
+              `
+            }
+          >
+            Specialized Care & Procedures
+          </NavLink>
         </div>
       </div>
-    );
-  }
-
+    </div>
+  );
+}
   /* =================================================
       NORMAL NAVIGATION LINKS
   ================================================== */
@@ -758,10 +728,16 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
         key={item.path}
         className="overflow-hidden rounded-xl"
       >
-        {/* SERVICES ROW */}
+        {/* =========================================
+            SERVICES MAIN ROW
+        ========================================== */}
         <div className="flex items-center gap-1">
+
+          {/* SERVICES TEXT
+              Click చేస్తే Advanced Fetal Scans open అవుతుంది
+          */}
           <NavLink
-            to="/services"
+            to="/services/advanced-fetal-scans"
             onClick={closeMenu}
             className={({ isActive }) =>
               `
@@ -785,29 +761,19 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
             Services
           </NavLink>
 
-          {/* SERVICES DROPDOWN BUTTON */}
+
+          {/* =========================================
+              SERVICES DROPDOWN ARROW
+          ========================================== */}
           <button
             type="button"
             aria-label="Open Services submenu"
             aria-expanded={mobileServicesOpen}
-            // onClick={() =>
-            //   setMobileServicesOpen(
-            //     (previous) => !previous
-            //   )
-            // }
-            onClick={() => {
-  setMobileServicesOpen((previous) => {
-    const nextValue = !previous;
-
-    if (nextValue) {
-      setMobileFetalOpen(true);
-    } else {
-      setMobileFetalOpen(false);
-    }
-
-    return nextValue;
-  });
-}}
+            onClick={() =>
+              setMobileServicesOpen(
+                (previous) => !previous
+              )
+            }
             className="
               flex
               h-11
@@ -819,6 +785,7 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
               bg-[#FFF6FA]
               text-[#663A8E]
               transition
+              duration-200
               hover:bg-[#FDEAF2]
             "
           >
@@ -839,153 +806,119 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
           </button>
         </div>
 
-        {/* ===========================================
-            SERVICES SUB MENU
-        ============================================ */}
+
+        {/* =========================================
+            MOBILE SERVICES DROPDOWN
+        ========================================== */}
         {mobileServicesOpen && (
-  <div
-    className="
-      ml-4
-      mt-1
-      rounded-2xl
-      border
-      border-[#663A8E]/10
-      bg-[#FBF8FC]
-      p-2
-    "
-  >
-            {/* FETAL SERVICES ROW */}
-            <div className="flex items-center gap-1">
-              <NavLink
-                to="/services/fetal-services"
-                onClick={closeMenu}
-                className="
-                  flex-1
+          <div
+            className="
+              ml-4
+              mt-1
+              space-y-1
+              rounded-2xl
+              border
+              border-[#663A8E]/10
+              bg-[#FBF8FC]
+              p-2
+            "
+          >
+
+            {/* =====================================
+                1. ADVANCED FETAL SCANS
+            ====================================== */}
+            <NavLink
+              to="/services/advanced-fetal-scans"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                `
+                  block
                   rounded-xl
                   px-4
                   py-3
                   text-[14px]
-                  font-semibold
-                  text-[#663A8E]
-                  transition
-                  hover:bg-white
-                  hover:text-[#D94C8A]
-                "
-              >
-                Fetal Services
-              </NavLink>
+                  font-medium
+                  transition-all
+                  duration-200
 
-              <button
-                type="button"
-                aria-label="Open Fetal Services submenu"
-                aria-expanded={mobileFetalOpen}
-                onClick={() =>
-                  setMobileFetalOpen(
-                    (previous) => !previous
-                  )
-                }
-                className="
-                  flex
-                  h-10
-                  w-10
-                  shrink-0
-                  items-center
-                  justify-center
+                  ${
+                    isActive
+                      ? "bg-white text-[#D94C8A] shadow-sm"
+                      : "text-[#252A44]/80 hover:bg-white hover:text-[#D94C8A]"
+                  }
+                `
+              }
+            >
+              Advanced Fetal Scans
+            </NavLink>
+
+
+            {/* =====================================
+                2. SCREENING & DIAGNOSTICS
+            ====================================== */}
+            <NavLink
+              to="/services/screening-diagnostics"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                `
+                  block
                   rounded-xl
-                  bg-white
-                  text-[#D94C8A]
-                  shadow-sm
-                "
-              >
-                <ChevronDown
-                  size={17}
-                  strokeWidth={2}
-                  className={`
-                    transition-transform
-                    duration-300
+                  px-4
+                  py-3
+                  text-[14px]
+                  font-medium
+                  transition-all
+                  duration-200
 
-                    ${
-                      mobileFetalOpen
-                        ? "rotate-180"
-                        : ""
-                    }
-                  `}
-                />
-              </button>
-            </div>
-
-            {/* =======================================
-                FETAL SERVICES CHILDREN
-            ======================================== */}
-           {mobileFetalOpen && (
-  <div
-    className="
-      ml-4
-      mt-0.5
-      space-y-0.5
-      border-l
-      border-[#D94C8A]/20
-      pl-2
-      pb-1
-    "
-  >
-                <NavLink
-                  to="/services/fetal-scans"
-                  onClick={closeMenu}
-                  className={({ isActive }) =>
-                    `
-                      block
-                      rounded-lg
-                      px-4
-                      py-3
-                      text-[13px]
-                      font-medium
-                      transition
-
-                      ${
-                        isActive
-                          ? "bg-white text-[#D94C8A]"
-                          : "text-[#252A44]/75 hover:bg-white hover:text-[#D94C8A]"
-                      }
-                    `
+                  ${
+                    isActive
+                      ? "bg-white text-[#D94C8A] shadow-sm"
+                      : "text-[#252A44]/80 hover:bg-white hover:text-[#D94C8A]"
                   }
-                >
-                  Fetal Scans
-                </NavLink>
+                `
+              }
+            >
+              Screening & Diagnostics
+            </NavLink>
 
-                <NavLink
-                  to="/services/fetal-procedures"
-                  onClick={closeMenu}
-                  className={({ isActive }) =>
-                    `
-                      block
-                      rounded-lg
-                      px-4
-                      py-3
-                      text-[13px]
-                      font-medium
-                      transition
 
-                      ${
-                        isActive
-                          ? "bg-white text-[#D94C8A]"
-                          : "text-[#252A44]/75 hover:bg-white hover:text-[#D94C8A]"
-                      }
-                    `
+            {/* =====================================
+                3. SPECIALIZED CARE & PROCEDURES
+            ====================================== */}
+            <NavLink
+              to="/services/specialized-care-procedures"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                `
+                  block
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-[14px]
+                  font-medium
+                  transition-all
+                  duration-200
+
+                  ${
+                    isActive
+                      ? "bg-white text-[#D94C8A] shadow-sm"
+                      : "text-[#252A44]/80 hover:bg-white hover:text-[#D94C8A]"
                   }
-                >
-                  Fetal Procedures
-                </NavLink>
-              </div>
-            )}
+                `
+              }
+            >
+              Specialized Care & Procedures
+            </NavLink>
+
           </div>
         )}
       </div>
     );
   }
 
+
   /* =================================================
-      OTHER MOBILE LINKS
+      OTHER MOBILE MENU LINKS
   ================================================== */
   return (
     <NavLink
@@ -1015,6 +948,8 @@ const [mobileFetalOpen, setMobileFetalOpen] = useState(false);
     </NavLink>
   );
 })}
+
+  
           </nav>
 
           {/* Mobile Contact Info */}

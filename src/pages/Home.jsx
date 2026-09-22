@@ -24,7 +24,8 @@ import doctorImage from "../assets/images/doctor.jpeg";
 
 import doctor1 from "../assets/images/doctor1.png";
 import f2 from "../assets/images/fetal-reduction.jpeg";
-import f1 from "../assets/images/f1.jpg";
+// import f1 from "../assets/images/f1.jpg";
+import Hero from "../assets/images/Hero.jpeg";
 
 import amnioImage from "../assets/images/amniocentesis.png";
 import cvsImage from "../assets/images/cvs.jpeg";
@@ -116,18 +117,18 @@ const testimonials = [
     quote: "Best fetal medicine specialist in Hyderabad. Detailed scanning and excellent genetic counseling for our peace of mind.",
     name: "Priya M.",
   },
-  {
-    quote: "Sample testimonial placeholder — replace this text with a verified patient review before publishing.",
-    name: "Sample Review 1",
-  },
-  {
-    quote: "Sample testimonial placeholder — add a verified patient experience here when available.",
-    name: "Sample Review 2",
-  },
-  {
-    quote: "Sample testimonial placeholder — replace with an approved testimonial from an actual patient.",
-    name: "Sample Review 3",
-  },
+  // {
+  //   quote: "Sample testimonial placeholder — replace this text with a verified patient review before publishing.",
+  //   name: "Sample Review 1",
+  // },
+  // {
+  //   quote: "Sample testimonial placeholder — add a verified patient experience here when available.",
+  //   name: "Sample Review 2",
+  // },
+  // {
+  //   quote: "Sample testimonial placeholder — replace with an approved testimonial from an actual patient.",
+  //   name: "Sample Review 3",
+  // },
 ];
 
 const blogs = [
@@ -169,8 +170,8 @@ const heroSlides = [
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
 
-    secondaryText: "View Services",
-    secondaryLink: "/services",
+    // secondaryText: "View Services",
+    // secondaryLink: "/services",
   },
 
   {
@@ -183,13 +184,14 @@ const heroSlides = [
     description:
       "Detailed fetal assessment and advanced ultrasound care to support your baby's growth, development and wellbeing throughout pregnancy.",
 
-    image: f1,
+    // image: f1,
+    image: Hero,
 
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
 
-    secondaryText: "View Fetal Scans",
-    secondaryLink: "/services/fetal-scans",
+    // secondaryText: "View Fetal Scans",
+    // secondaryLink: "/services/fetal-scans",
   },
 
   {
@@ -207,8 +209,8 @@ const heroSlides = [
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
 
-    secondaryText: "View Procedures",
-    secondaryLink: "/services/fetal-procedures",
+    // secondaryText: "View Procedures",
+    // secondaryLink: "/services/fetal-procedures",
   },
 ];
 
@@ -369,7 +371,7 @@ export default function Home() {
           </span>
         </Link>
 
-        <Link
+        {/* <Link
           to={slide.secondaryLink}
           className="hero-secondary-button"
         >
@@ -378,7 +380,7 @@ export default function Home() {
           </span>
 
           <ArrowRight size={16} />
-        </Link>
+        </Link> */}
       </div>
     </div>
 

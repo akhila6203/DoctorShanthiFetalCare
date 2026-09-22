@@ -24,21 +24,21 @@ const testimonials = [
       "Best fetal medicine specialist in Hyderabad. Detailed scanning and excellent genetic counseling for our peace of mind.",
     name: "Priya M.",
   },
-  {
-    quote:
-      "Sample testimonial placeholder — replace this text with a verified patient review before publishing.",
-    name: "Sample Review 1",
-  },
-  {
-    quote:
-      "Sample testimonial placeholder — add a verified patient experience here when available.",
-    name: "Sample Review 2",
-  },
-  {
-    quote:
-      "Sample testimonial placeholder — replace with an approved testimonial from an actual patient.",
-    name: "Sample Review 3",
-  },
+  // {
+  //   quote:
+  //     "Sample testimonial placeholder — replace this text with a verified patient review before publishing.",
+  //   name: "Sample Review 1",
+  // },
+  // {
+  //   quote:
+  //     "Sample testimonial placeholder — add a verified patient experience here when available.",
+  //   name: "Sample Review 2",
+  // },
+  // {
+  //   quote:
+  //     "Sample testimonial placeholder — replace with an approved testimonial from an actual patient.",
+  //   name: "Sample Review 3",
+  // },
 ];
 
 

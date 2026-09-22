@@ -8,6 +8,7 @@ const qualifications = [
   "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi (2021)",
   "Fellowship in Regenerative Medicine & Cosmetic Gynecology – IASRM, Delhi",
   "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
+  // "Her dream of immense passion in fetal scans and fetal therapy was fulfilled by pursuing Fellowship in Fetal Medicine - Fetal Medicine & Fetal Therapy Department, Yashoda Hospital, Hitech City",
 ];
 
 const moments = [
