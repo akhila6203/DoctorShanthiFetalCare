@@ -213,7 +213,7 @@ export default function SpecializedCareProcedures() {
             {/* =========================================
                 VISUAL
             ========================================== */}
-            <div
+            {/* <div
               className="
                 mt-7
                 flex
@@ -272,7 +272,7 @@ export default function SpecializedCareProcedures() {
                   Clinical Procedure Room
                 </p>
               </div>
-            </div>
+            </div> */}
 
 
             {/* =========================================

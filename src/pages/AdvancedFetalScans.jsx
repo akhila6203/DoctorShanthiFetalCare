@@ -1,4 +1,4 @@
-import { Check, ScanLine } from "lucide-react";
+import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 /* =========================================
@@ -195,303 +195,164 @@ export default function AdvancedFetalScans() {
   </div>
 </section>
 
-      {/* =====================================================
-          ADVANCED FETAL SCANS CONTENT
-      ====================================================== */}
-      <section
+     {/* =====================================================
+    ADVANCED FETAL SCANS CONTENT
+====================================================== */}
+<section
+  className="
+    relative
+    overflow-hidden
+    bg-white
+    py-12
+    sm:py-14
+    lg:py-16
+  "
+>
+  <div
+    className="
+      relative
+      mx-auto
+      grid
+      w-full
+      max-w-[1280px]
+      items-center
+      gap-10
+      px-4
+      sm:px-6
+      lg:grid-cols-[1fr_0.9fr]
+      lg:gap-14
+      lg:px-8
+    "
+  >
+
+    {/* =================================================
+        LEFT SIDE - NAME + CONTENT
+    ================================================== */}
+    <div>
+      <h2
         className="
-          relative
-          overflow-hidden
-          bg-white
-          py-12
-          sm:py-14
-          lg:py-16
+          text-[28px]
+          font-bold
+          leading-[1.18]
+          tracking-[-0.02em]
+          text-[#252A44]
+          sm:text-[34px]
+          lg:text-[40px]
         "
       >
-        {/* Background Shape */}
-        <div
-          className="
-            pointer-events-none
-            absolute
-            -left-28
-            top-10
-            h-[300px]
-            w-[300px]
-            rounded-full
-            bg-[#D94C8A]/[0.04]
-            blur-3xl
-          "
-        />
+        Advanced Fetal{" "}
+        <span className="text-[#663A8E]">
+          Scans
+        </span>
+      </h2>
 
-        <div
-          className="
-            pointer-events-none
-            absolute
-            -right-24
-            bottom-0
-            h-[300px]
-            w-[300px]
-            rounded-full
-            bg-[#663A8E]/[0.04]
-            blur-3xl
-          "
-        />
+      {/* Heading Line */}
+      <div
+        className="
+          mt-4
+          h-[3px]
+          w-[65px]
+          rounded-full
+          bg-[linear-gradient(90deg,#663A8E,#D94C8A)]
+        "
+      />
 
-
-        <div
-          className="
-            relative
-            mx-auto
-            grid
-            w-full
-            max-w-[1280px]
-            gap-9
-            px-4
-            sm:px-6
-            lg:grid-cols-[0.88fr_1.12fr]
-            lg:items-center
-            lg:gap-14
-            lg:px-8
-          "
-        >
-
-          {/* =================================================
-              LEFT CONTENT
-          ================================================== */}
-          <div>
-            <h2
-              className="
-                text-[28px]
-                font-bold
-                leading-[1.18]
-                tracking-[-0.02em]
-                text-[#252A44]
-                sm:text-[34px]
-                lg:text-[40px]
-              "
-            >
-              Advanced Fetal{" "}
-              <span className="text-[#663A8E]">
-                Scans
-              </span>
-            </h2>
-
-
-            {/* Heading Line */}
-            <div
-              className="
-                mt-4
-                h-[3px]
-                w-[65px]
-                rounded-full
-                bg-[linear-gradient(90deg,#663A8E,#D94C8A)]
-              "
-            />
-
-
-            {/* Visual */}
-            <div
-              className="
-                mt-7
-                flex
-                items-center
-                gap-4
-                rounded-[18px]
-                border
-                border-[#663A8E]/10
-                bg-[linear-gradient(135deg,#FBF8FC_0%,#FFF4F8_100%)]
-                px-5
-                py-4
-              "
-            >
-              <div
-                className="
-                  flex
-                  h-11
-                  w-11
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-white
-                  text-[#D94C8A]
-                  shadow-[0_5px_15px_rgba(102,58,142,0.08)]
-                "
-              >
-                <ScanLine
-                  size={20}
-                  strokeWidth={1.8}
-                />
-              </div>
-
-              <div>
-                <p
-                  className="
-                    text-[11px]
-                    font-semibold
-                    uppercase
-                    tracking-[0.08em]
-                    text-[#D94C8A]
-                  "
-                >
-                  Visual
-                </p>
-
-                <p
-                  className="
-                    mt-1
-                    text-[14px]
-                    font-semibold
-                    leading-5
-                    text-[#252A44]
-                    sm:text-[15px]
-                  "
-                >
-                  HD 3D/4D Fetal Scan Render
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          {/* =================================================
-              RIGHT - SCAN SERVICES
-          ================================================== */}
+      {/* Services */}
+      <div className="mt-7 space-y-3">
+        {scanServices.map((service) => (
           <div
+            key={service}
             className="
-              rounded-[24px]
+              group
+              flex
+              min-h-[56px]
+              items-center
+              gap-3
+              rounded-[14px]
               border
               border-[#663A8E]/10
-              bg-white
-              p-5
-              shadow-[0_16px_45px_rgba(72,38,109,0.08)]
-              sm:p-7
-              lg:p-8
+              bg-[#FCFAFD]
+              px-4
+              py-3
+              transition-all
+              duration-300
+              hover:border-[#663A8E]/20
+              hover:bg-[#F8F4FB]
             "
           >
-            {/* Card Heading */}
+            {/* Check Icon */}
             <div
               className="
-                mb-6
                 flex
+                h-8
+                w-8
+                shrink-0
                 items-center
-                gap-3
+                justify-center
+                rounded-full
+                bg-[#663A8E]/10
+                text-[#663A8E]
+                transition-all
+                duration-300
+                group-hover:bg-[#663A8E]
+                group-hover:text-white
               "
             >
-              <div
-                className="
-                  flex
-                  h-10
-                  w-10
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-xl
-                  bg-[#FFF0F6]
-                  text-[#D94C8A]
-                "
-              >
-                <ScanLine size={19} />
-              </div>
-
-              <div>
-                <h3
-                  className="
-                    text-[19px]
-                    font-bold
-                    text-[#252A44]
-                    sm:text-[21px]
-                  "
-                >
-                  Fetal Scan Services
-                </h3>
-
-                <div
-                  className="
-                    mt-2
-                    h-[2px]
-                    w-[48px]
-                    rounded-full
-                    bg-[linear-gradient(90deg,#663A8E,#D94C8A)]
-                  "
-                />
-              </div>
+              <Check
+                size={15}
+                strokeWidth={2.5}
+              />
             </div>
 
-
-            {/* Services */}
-            <div
+            <span
               className="
-                grid
-                grid-cols-1
-                gap-3
-                sm:grid-cols-2
+                text-[14px]
+                font-medium
+                leading-6
+                text-[#252A44]/85
+                sm:text-[15px]
               "
             >
-              {scanServices.map((service) => (
-                <div
-                  key={service}
-                  className="
-                    group
-                    flex
-                    min-h-[58px]
-                    items-center
-                    gap-3
-                    rounded-xl
-                    border
-                    border-[#663A8E]/[0.07]
-                    bg-[#FCFAFD]
-                    px-4
-                    py-3
-                    transition-all
-                    duration-300
-
-                    hover:border-[#D94C8A]/20
-                    hover:bg-[#FFF5F9]
-                  "
-                >
-                  <div
-                    className="
-                      flex
-                      h-7
-                      w-7
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-[#D94C8A]/10
-                      text-[#D94C8A]
-                      transition-all
-                      duration-300
-
-                      group-hover:bg-[#D94C8A]
-                      group-hover:text-white
-                    "
-                  >
-                    <Check
-                      size={14}
-                      strokeWidth={2.5}
-                    />
-                  </div>
-
-                  <span
-                    className="
-                      text-[13px]
-                      font-medium
-                      leading-5
-                      text-[#252A44]/85
-                      sm:text-[14px]
-                    "
-                  >
-                    {service}
-                  </span>
-                </div>
-              ))}
-            </div>
+              {service}
+            </span>
           </div>
+        ))}
+      </div>
+    </div>
 
-        </div>
-      </section>
+
+    {/* =================================================
+        RIGHT SIDE - IMAGE
+    ================================================== */}
+    <div
+      className="
+        mx-auto
+        w-full
+        max-w-[520px]
+        lg:max-w-none
+      "
+    >
+      <div
+        className="
+          overflow-hidden
+          rounded-[22px]
+          bg-[#F8F5FA]
+        "
+      >
+        <img
+          src={fs1}
+          alt="Advanced Fetal Scan"
+          className="
+            h-auto
+            w-full
+            object-contain
+          "
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
       {/* =====================================================

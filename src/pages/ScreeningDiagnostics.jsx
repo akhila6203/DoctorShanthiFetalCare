@@ -212,7 +212,7 @@ export default function ScreeningDiagnostics() {
             {/* =========================================
                 VISUAL
             ========================================== */}
-            <div
+            {/* <div
               className="
                 mt-7
                 flex
@@ -271,7 +271,7 @@ export default function ScreeningDiagnostics() {
                   Genetic Screening Analysis Chart
                 </p>
               </div>
-            </div>
+            </div> */}
 
 
             {/* =========================================
