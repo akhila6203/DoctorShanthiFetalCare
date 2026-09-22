@@ -25,7 +25,7 @@ import doctorImage from "../assets/images/doctor.jpeg";
 import doctor1 from "../assets/images/doctor1.png";
 import f2 from "../assets/images/fetal-reduction.jpeg";
 // import f1 from "../assets/images/f1.jpg";
-import Hero from "../assets/images/hero.jpeg";
+import hero from "../assets/images/hero.jpeg";
 
 import amnioImage from "../assets/images/amniocentesis.png";
 import cvsImage from "../assets/images/cvs.jpeg";
@@ -185,7 +185,7 @@ const heroSlides = [
       "Detailed fetal assessment and advanced ultrasound care to support your baby's growth, development and wellbeing throughout pregnancy.",
 
     // image: f1,
-    image: Hero,
+    image: hero,
 
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
