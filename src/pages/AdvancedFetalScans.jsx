@@ -4,15 +4,25 @@ import { Link } from "react-router-dom";
 /* =========================================
    FETAL SCAN IMAGES
 ========================================= */
-import fs1 from "../assets/images/fs1.jpg";
-import fs2 from "../assets/images/fs2.jpg";
-import fs3 from "../assets/images/fs3.jpg";
-import fs4 from "../assets/images/fs4.jpg";
-import fs5 from "../assets/images/fs5.jpg";
-import fs6 from "../assets/images/fs6.jpg";
-import fs7 from "../assets/images/fs7.jpg";
-import fs8 from "../assets/images/fs8.jpg";
-import fs9 from "../assets/images/fs9.jpg";
+import fs1 from "../assets/images/f1.jpeg";
+import fs2 from "../assets/images/f2.jpeg";
+import fs3 from "../assets/images/f3.jpeg";
+import fs4 from "../assets/images/f4.jpeg";
+import fs5 from "../assets/images/f5.jpeg";
+import fs6 from "../assets/images/f6.jpeg";
+import fs7 from "../assets/images/f7.jpeg";
+import fs8 from "../assets/images/f8.jpeg";
+import fs9 from "../assets/images/f9.jpeg";
+
+// import fs1 from "../assets/images/fs1.jpg";
+// import fs2 from "../assets/images/fs2.jpg";
+// import fs3 from "../assets/images/fs3.jpg";
+// import fs4 from "../assets/images/fs4.jpg";
+// import fs5 from "../assets/images/fs5.jpg";
+// import fs6 from "../assets/images/fs6.jpg";
+// import fs7 from "../assets/images/fs7.jpg";
+// import fs8 from "../assets/images/fs8.jpg";
+// import fs9 from "../assets/images/fs9.jpg";
 
 
 /* =========================================

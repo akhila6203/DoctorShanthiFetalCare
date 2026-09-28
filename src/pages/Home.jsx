@@ -23,12 +23,14 @@ import TestimonialsSlider from "../components/home/TestimonialsSlider";
 import doctorImage from "../assets/images/doctor.jpeg";
 
 import doctor1 from "../assets/images/doctor1.png";
-import f2 from "../assets/images/fetal-reduction.jpeg";
+// import f2 from "../assets/images/fetal-reduction.jpeg";
 // import f1 from "../assets/images/f1.jpg";
-import heroImage from "../assets/images/hero.jpeg";
+// import heroImage from "../assets/images/hero.jpeg";
 
-import amnioImage from "../assets/images/amniocentesis.png";
-import cvsImage from "../assets/images/cvs.jpeg";
+// import amnioImage from "../assets/images/amniocentesis.png";
+// import cvsImage from "../assets/images/cvs.jpeg";
+import amnioImage from "../assets/images/s1.png";
+import cvsImage from "../assets/images/s2.jpeg";
 import reductionImage from "../assets/images/fetal-reduction.jpeg";
 
 const services = [
@@ -95,11 +97,12 @@ const fetalTherapy = [
 ];
 
 const qualifications = [
-  "MBBS from prestigious Gandhi Medical College, Hyderabad (Completed 2013)",
-  "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai (Completed 2020)",
-  "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi (2021)",
+  "MBBS from prestigious Gandhi Medical College, Hyderabad",
+  "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai",
+  "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi ",
   "Fellowship in Regenerative Medicine & Cosmetic Gynecology – IASRM, Delhi",
-  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
+  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Yashoda Hospital, Hitech City, Hyderabad",
+  // "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
 ];
 
 const expertise = [
@@ -184,8 +187,7 @@ const heroSlides = [
     description:
       "Detailed fetal assessment and advanced ultrasound care to support your baby's growth, development and wellbeing throughout pregnancy.",
 
-    // image: f1,
-    image: heroImage,
+    // image: heroImage,
 
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
@@ -204,7 +206,7 @@ const heroSlides = [
     description:
       "Specialised diagnostic and therapeutic fetal procedures with careful evaluation, personalised counselling and advanced fetal medicine care.",
 
-    image: f2,
+    // image: f2,
 
     primaryText: "Book Appointment",
     primaryLink: "/appointment",
@@ -362,9 +364,16 @@ export default function Home() {
       >
         <Link
           to={slide.primaryLink}
-          className="hero-primary-button"
-        >
-          <CalendarDays size={16} />
+          className="
+    hero-primary-button
+    !w-auto
+    !flex-none
+    !self-start
+    whitespace-nowrap
+  "
+>
+        
+          <CalendarDays size={16}  className="shrink-0"/>
 
           <span>
             {slide.primaryText}
@@ -388,7 +397,7 @@ export default function Home() {
         RIGHT IMAGE
     ====================================================== */}
 
-    <div
+    {/* <div
       className="
         hero-rise
         hero-delay-2
@@ -424,8 +433,6 @@ export default function Home() {
           "
         />
 
-        {/* DOCTOR LABEL */}
-
         <div
           className="
             absolute
@@ -453,7 +460,93 @@ export default function Home() {
           </p>
         </div>
       </div>
+    </div> */}
+    {/* =====================================================
+    RIGHT IMAGE
+
+    Slide 1 = Image + Doctor Name visible
+    Slide 2 = Completely hidden
+    Slide 3 = Completely hidden
+====================================================== */}
+
+{slide.image && (
+  <div
+    className="
+      hero-rise
+      hero-delay-2
+      relative
+      hidden
+      h-full
+      items-end
+      justify-center
+      self-stretch
+      pt-5
+      lg:flex
+    "
+  >
+    <div
+      className="
+        relative
+        flex
+        h-full
+        w-full
+        items-end
+        justify-center
+      "
+    >
+      {/* HERO IMAGE */}
+      <img
+        src={slide.image}
+        alt={
+          activeSlide === 0
+            ? "Dr. Shanthi.G - Fetal and maternal care"
+            : ""
+        }
+        className="
+          hero-doctor-image
+          w-full
+          max-w-[560px]
+          object-contain
+          object-bottom
+        "
+      />
+
+      {/* ==========================================
+          DOCTOR NAME
+          ONLY FIRST SLIDE
+      ========================================== */}
+
+      {activeSlide === 0 && (
+        <div
+          className="
+            absolute
+            bottom-7
+            left-1/2
+            -translate-x-1/2
+            rounded-full
+            bg-white/95
+            px-5
+            py-2.5
+            shadow-[0_10px_30px_rgba(20,20,40,.16)]
+          "
+        >
+          <p
+            className="
+              whitespace-nowrap
+              text-[12px]
+              font-bold
+              uppercase
+              tracking-[.13em]
+              text-[#D94C8A]
+            "
+          >
+            Dr. Shanthi.G
+          </p>
+        </div>
+      )}
     </div>
+  </div>
+)}
   </div>
 
   {/* =======================================================
@@ -572,7 +665,7 @@ export default function Home() {
   </div>
 </section>
 
-      <section className="expertise-bridge">
+      {/* <section className="expertise-bridge">
         <div className="content-shell">
           <div className="grid overflow-hidden rounded-[22px] bg-white shadow-[0_16px_44px_rgba(72,38,109,.13)] md:grid-cols-3">
             {expertise.map(([Icon, title, text], index) => (
@@ -586,7 +679,176 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <section className="expertise-bridge">
+  <div className="content-shell">
+    <div
+      className="
+        grid
+        overflow-hidden
+        rounded-[22px]
+        bg-white
+        shadow-[0_16px_44px_rgba(72,38,109,.13)]
+        md:grid-cols-3
+      "
+    >
+      {expertise.map(([Icon, title, text], index) => (
+        <Link
+          to="/about"
+          key={title}
+          className={`
+            group
+            relative
+            flex
+            items-center
+            gap-4
+            overflow-hidden
+            px-5
+            py-5
+
+            transition-all
+            duration-300
+            ease-out
+
+            hover:-translate-y-[3px]
+            hover:bg-[#FFF8FB]
+            hover:shadow-[0_12px_30px_rgba(102,58,142,.10)]
+
+            sm:px-6
+
+            ${
+              index < 2
+                ? "border-b border-[#663A8E]/10 md:border-b-0 md:border-r"
+                : ""
+            }
+          `}
+        >
+          {/* ==============================
+              SOFT HOVER BACKGROUND
+          ============================== */}
+          <span
+            className="
+              pointer-events-none
+              absolute
+              -right-10
+              -top-10
+              h-24
+              w-24
+              rounded-full
+              bg-[#D94C8A]/0
+              blur-2xl
+
+              transition-all
+              duration-500
+
+              group-hover:scale-150
+              group-hover:bg-[#D94C8A]/10
+            "
+          />
+
+          {/* ==============================
+              ICON
+          ============================== */}
+          <span
+            className="
+              relative
+              z-10
+              flex
+              h-14
+              w-14
+              shrink-0
+              items-center
+              justify-center
+              rounded-full
+
+              bg-[linear-gradient(135deg,#663A8E,#D94C8A)]
+              text-white
+
+              shadow-[0_8px_22px_rgba(217,76,138,.23)]
+
+              transition-all
+              duration-300
+              ease-out
+
+              group-hover:-translate-y-1
+              group-hover:scale-[1.07]
+              group-hover:rotate-[3deg]
+              group-hover:shadow-[0_12px_28px_rgba(217,76,138,.32)]
+
+              sm:h-16
+              sm:w-16
+            "
+          >
+            <Icon
+              size={28}
+              strokeWidth={1.7}
+              className="
+                transition-transform
+                duration-300
+                ease-out
+                group-hover:scale-110
+              "
+            />
+          </span>
+
+          {/* ==============================
+              CONTENT
+          ============================== */}
+          <div
+            className="
+              relative
+              z-10
+              transition-transform
+              duration-300
+              ease-out
+              group-hover:translate-x-1
+            "
+          >
+            <h3
+              className="
+                text-[16px]
+                font-bold
+                text-[#252A44]
+
+                transition-colors
+                duration-300
+
+                group-hover:text-[#663A8E]
+
+                sm:text-[17px]
+              "
+            >
+              {title}
+            </h3>
+
+            <p
+              className="
+                mt-1
+                text-[13px]
+                leading-5
+                text-[#252A44]/62
+
+                transition-colors
+                duration-300
+
+                group-hover:text-[#252A44]/75
+
+                sm:text-[14px]
+              "
+            >
+              {text}
+            </p>
+          </div>
+
+          {/* ==============================
+              BOTTOM HOVER LINE
+          ============================== */}
+          
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* =========================================================
     ABOUT DR. SHANTHI.G

@@ -8,8 +8,10 @@ import PageBanner from "../components/common/PageBanner";
 import TestimonialsSlider from "../components/home/TestimonialsSlider";
 
 /* REAL CLINICAL IMAGES */
-import scanImage from "../assets/images/amniocentesis.png";
-import motherBabyImage from "../assets/images/cvs.jpeg";
+// import scanImage from "../assets/images/amniocentesis.png";
+// import motherBabyImage from "../assets/images/cvs.jpeg";
+import scanImage from "../assets/images/s1.png";
+import motherBabyImage from "../assets/images/s2.jpeg";
 import consultationImage from "../assets/images/pregnancy-consultation.jpeg";
 
 

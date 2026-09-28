@@ -3,11 +3,12 @@ import PageBanner from "../components/common/PageBanner";
 import doctorImage from "../assets/images/doctor.jpeg";
 
 const qualifications = [
-  "MBBS from prestigious Gandhi Medical College, Hyderabad (Completed 2013)",
-  "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai (Completed 2020)",
-  "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi (2021)",
+  "MBBS from prestigious Gandhi Medical College, Hyderabad ",
+  "DNB Obstetrics & Gynecology at Southern Railway Hospital, Chennai",
+  "Fellowship in Minimal Access Surgery – World Laparoscopy Hospital (WLH), Delhi",
   "Fellowship in Regenerative Medicine & Cosmetic Gynecology – IASRM, Delhi",
-  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
+  "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Yashoda Hospital, Hitech City, Hyderabad",
+  // "Fellowship in Fetal Medicine – Fetal Medicine & Fetal Therapy Department, Sunridge Multi-Speciality Hospital, Moti Nagar, Hyderabad",
   // "Her dream of immense passion in fetal scans and fetal therapy was fulfilled by pursuing Fellowship in Fetal Medicine - Fetal Medicine & Fetal Therapy Department, Yashoda Hospital, Hitech City",
 ];
 
