@@ -343,27 +343,34 @@ export default function ScreeningDiagnostics() {
               NORMAL IMAGE - NO EXTRA DESIGN
           ================================================== */}
           <div
-            className="
-              flex
-              w-full
-              items-center
-              justify-center
-            "
-          >
-            <img
-              src={screeningImage}
-              alt="Screening and Diagnostics"
-              className="
-                block
-                h-auto
-                max-h-[500px]
-                w-full
-                max-w-[540px]
-                object-contain
-              "
-            />
-          </div>
-
+  className="
+    flex
+    w-full
+    items-center
+    justify-center
+  "
+>
+  <div
+    className="
+      w-full
+      max-w-[540px]
+      overflow-hidden
+      rounded-[28px]
+    "
+  >
+    <img
+      src={screeningImage}
+      alt="Screening and Diagnostics"
+      className="
+        block
+        h-auto
+        max-h-[560px]
+        w-full
+        object-cover
+      "
+    />
+  </div>
+</div>
         </div>
       </section>
 

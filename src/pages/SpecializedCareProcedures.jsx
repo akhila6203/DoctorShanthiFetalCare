@@ -2,7 +2,7 @@ import { Check, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // import specializedCareImage from "../assets/images/amniocentesis.png";
-import specializedCareImage from "../assets/images/cvs1.jpeg";
+import specializedCareImage from "../assets/images/s2.jpeg";
 
 
 /* =========================================
@@ -353,26 +353,40 @@ export default function SpecializedCareProcedures() {
               NO DECORATION
           ================================================== */}
           <div
-            className="
-              flex
-              w-full
-              items-center
-              justify-center
-            "
-          >
-            <img
-              src={specializedCareImage}
-              alt="Specialized Care and Procedures"
-              className="
-                block
-                h-auto
-                max-h-[540px]
-                w-full
-                max-w-[540px]
-                object-contain
-              "
-            />
-          </div>
+  className="
+    flex
+    w-full
+    items-center
+    justify-center
+  "
+>
+  <div
+    className="
+      h-[420px]
+      w-full
+      max-w-[520px]
+      overflow-hidden
+      rounded-[24px]
+
+      sm:h-[480px]
+      sm:rounded-[28px]
+
+      lg:h-[520px]
+    "
+  >
+    <img
+      src={specializedCareImage}
+      alt="Specialized Care and Procedures"
+      className="
+        block
+        h-full
+        w-full
+        rounded-[inherit]
+        object-cover
+      "
+    />
+  </div>
+</div>
 
         </div>
       </section>

@@ -241,7 +241,7 @@ export default function Footer() {
     <span className="hidden text-white/50 sm:inline">•</span>
 
     <span className="text-[14px] font-bold text-[#FFE6A9] sm:text-[15px]">
-      5:00 PM – 8:00 PM
+      6:00 PM – 9:00 PM
     </span>
   </div>
 </div>
