@@ -105,7 +105,7 @@ const closeMenu = () => {
                 Document currently provides only +91-
                 Replace with actual number when available.
               */}
-              <span>+91 91214 45341</span>
+              <span>+91 9652766690</span>
             </div>
           </div>
 

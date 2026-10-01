@@ -180,7 +180,7 @@ export default function Footer() {
                       Appointment Phone
                     </p>
                     <p className="mt-1 text-[15px] font-semibold sm:text-[16px]">
-                      +91 91214 45341
+                      +91 9652766690
                     </p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function Footer() {
       </footer>
 
       <a
-        href="https://wa.me/919121445341?text=Hello%20I%20would%20like%20to%20know%20more."
+        href="https://wa.me/919652766690?text=Hello%20I%20would%20like%20to%20know%20more."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

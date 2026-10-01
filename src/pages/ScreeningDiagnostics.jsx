@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
    Change filename here if your image name
    is different
 ========================================= */
-import screeningImage from "../assets/images/hero.jpeg";
+// import screeningImage from "../assets/images/hero.jpeg";
+import screeningImage from "../assets/images/fetal-reduction.jpeg";
 
 
 /* =========================================

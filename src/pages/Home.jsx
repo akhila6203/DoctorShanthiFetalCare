@@ -1257,11 +1257,11 @@ export default function Home() {
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,20,55,.04)_20%,rgba(51,30,76,.22)_48%,rgba(61,33,91,.96)_100%)]" />
 
               {/* Top Icon */}
-              <div className="absolute left-5 top-5 z-10">
+              {/* <div className="absolute left-5 top-5 z-10">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#663A8E] shadow-[0_10px_28px_rgba(25,18,45,.18)]">
                   <Icon size={25} strokeWidth={1.8} />
                 </span>
-              </div>
+              </div> */}
 
               {/* Bottom Content */}
               <div className="absolute inset-x-0 bottom-0 z-10 p-6 sm:p-7">
